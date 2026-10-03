@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="个人网站">
+<title>个人网站</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%234f9cf9'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif'%3E%E4%BD%A0%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 导航 -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home" id="navBrand">个人网站</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">首页</a>
+      <a href="#about">关于</a>
+      <a href="#skills">技能</a>
+      <a href="#experience">经历</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </div>
+    <button id="themeBtn" class="theme-btn" title="切换明暗主题" aria-label="切换主题">🌙</button>
+  </div>
+</nav>
+
+<!-- 首屏 -->
+<header class="hero" id="home">
+  <div class="hero-inner reveal">
+    <div class="avatar" id="avatar"></div>
+    <h1 id="heroName">你的名字</h1>
+    <p class="hero-title" id="heroTitle"></p>
+    <p class="hero-tagline" id="heroTagline"></p>
+    <p class="hero-location" id="heroLocation" style="display:none"></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projects">查看项目</a>
+      <a class="btn btn-ghost" href="#contact">联系我</a>
+    </div>
+    <div class="socials" id="socials"></div>
+  </div>
+</header>
+
+<main>
+  <!-- 关于我 -->
+  <section class="section" id="about">
+    <h2 class="section-title reveal">关于我</h2>
+    <div class="about-body reveal" id="aboutBody"></div>
+  </section>
+
+  <!-- 技能 -->
+  <section class="section alt" id="skills">
+    <h2 class="section-title reveal">技能</h2>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <!-- 经历 -->
+  <section class="section" id="experience">
+    <h2 class="section-title reveal">经历</h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <!-- 项目 -->
+  <section class="section alt" id="projects">
+    <h2 class="section-title reveal">项目</h2>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section" id="contact">
+    <h2 class="section-title reveal">联系我</h2>
+    <p class="contact-lead reveal">欢迎通过以下方式与我交流。</p>
+    <div class="contact-grid reveal" id="contactGrid"></div>
+  </section>
+</main>
+
+<footer class="footer" id="footer"></footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
